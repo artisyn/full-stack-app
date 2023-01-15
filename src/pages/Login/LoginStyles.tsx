@@ -21,6 +21,7 @@ export const SignInWrapper = styled.div`
 `;
 export const TopWrapper = styled.div`
 	padding: 3rem;
+	padding-bottom: 1rem;
 `;
 
 export const Title = styled.div`
@@ -81,6 +82,31 @@ export const Button = styled.button`
 	&:hover {
 		background-color: #283c48;
 	}
+`;
+export const GoogleWrapper = styled.div`
+	padding: 1rem;
+`;
+export const Text = styled.p`
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #4789df;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all ease 0.3rem;
+	&:hover {
+		color: #283c48;
+	}
+`;
+export const SmallIcon = styled.span`
+	font-size: 1.4rem;
+	margin-left: 0.5rem;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 `;
 
 export const BottomWrapper = styled.div`
