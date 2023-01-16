@@ -4,6 +4,7 @@ import { FaLock } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { auth, provider } from '../../config/firebase';
 import { signInWithPopup } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 
 import {
 	Container,
@@ -24,11 +25,16 @@ import {
 } from './LoginStyles';
 
 const Login = () => {
+	const navigate = useNavigate();
+
 	const signInWithGoogle = async () => {
-		console.log('google');
 		const result = await signInWithPopup(auth, provider);
 		console.log(result);
+		if (result) {
+			navigate('/');
+		}
 	};
+
 	return (
 		<Container>
 			<SignInWrapper>

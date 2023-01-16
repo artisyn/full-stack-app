@@ -15,7 +15,6 @@ function App() {
 					<Route path="*" element={<Navigate to="/" />} />
 				</Routes>
 			</BrowserRouter>
-			<p>test</p>
 		</div>
 	);
 }
