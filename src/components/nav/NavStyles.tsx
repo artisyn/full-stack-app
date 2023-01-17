@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import '../index.css';
+import '../../index.css';
 
 export const Container = styled.div`
 	position: relative;
@@ -20,6 +20,22 @@ export const NavItem = styled(Link)`
 	transition: all ease 0.3s;
 	&:hover {
 		color: #4055637a;
+	}
+`;
+export const SpecialNavItem = styled(Link)`
+	outline: none;
+	text-decoration: none;
+	border: 2px solid blueviolet;
+	border-radius: 0.6rem;
+	padding: 0.5rem 1rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: blueviolet;
+	transition: all ease 0.4s;
+	&:hover {
+		color: #a6799f;
+		color: #29506c;
+		border: 2px solid #29506c;
 	}
 `;
 
@@ -52,9 +68,9 @@ export const Icon2 = styled.span`
 	}
 `;
 export const NameContainer = styled.span`
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	font-style: italic;
-	color: #4055637a;
+	color: blueviolet;
 	transition: all ease 1s;
 `;
